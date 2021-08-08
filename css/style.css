@@ -1,3 +1,14 @@
+:root {
+    --p-dark: #172044;
+    --p-white: #FFFFFF;
+    --s-orange: #FCB712;
+    --s-blue: #317AA4;
+    --s-brown: #D29F2A;
+    --s-green: #279B48;
+    --s-red: #EA1B2D;
+    --s-magenta: #DF1382;
+}
+
 body {
     overflow-x: hidden;
 }
