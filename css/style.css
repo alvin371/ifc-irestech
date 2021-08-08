@@ -20,3 +20,47 @@ body {
     background-size: cover;
     height: 840px;
 }
+
+.ir-bg-gradient-dark {
+    background: var(--p-dark);
+    background: linear-gradient(125deg, var(--p-dark) 55%, rgba(47,58,100,1) 86%, rgba(71,83,132,1) 100%); 
+}
+
+.ir-block {
+    padding-top: 8.5rem;
+    padding-bottom: 8.5rem;
+}
+
+.ir-rotate-5 {
+    transform: rotate(5deg);
+}
+
+.ir-text-orange {
+    color: var(--s-orange);
+}
+
+.ir-pos-relative {
+    position: relative;
+}
+
+.ir-z-index-2 {
+    z-index: 2;
+}
+
+.ir-background {
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+}
+
+.ir-bg-particles-1 {
+    background-image: url('../img/particles-1.svg');
+    background-size: cover;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
