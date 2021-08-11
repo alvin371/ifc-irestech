@@ -26,6 +26,16 @@ body {
     background: linear-gradient(125deg, var(--p-dark) 55%, rgba(47,58,100,1) 86%, rgba(71,83,132,1) 100%); 
 }
 
+.ir-bg-gradient-dark-2 {
+    background: var(--p-dark);
+    background: linear-gradient(55deg, var(--p-dark) 55%, rgba(47,58,100,1) 86%, rgba(71,83,132,1) 100%); 
+}
+
+.ir-bg-gradient-dark-3 {
+    background: var(--p-dark);
+    background: linear-gradient(125deg, var(--p-dark) 55%, rgba(47,58,100,1) 86%, rgba(71,83,132,1) 100%); 
+}
+
 .ir-block {
     padding-top: 8.5rem;
     padding-bottom: 8.5rem;
@@ -59,6 +69,22 @@ body {
 
 .ir-bg-particles-1 {
     background-image: url('../img/particles-1.svg');
+    background-size: cover;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.ir-bg-particles-2 {
+    background-image: url('../img/particles-2.svg');
+    background-size: cover;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.ir-bg-particles-3 {
+    background-image: url('../img/particles-3.svg');
     background-size: cover;
     height: 100%;
     position: relative;
