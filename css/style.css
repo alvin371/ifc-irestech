@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap');
+
 :root {
     --p-dark: #172044;
     --p-white: #FFFFFF;
@@ -14,7 +16,7 @@
     padding: 0;
 }
 
-body {
+html, body {
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
@@ -22,9 +24,8 @@ body {
 #home {
     background-image: url('../img/background.jpg');
     background-repeat: no-repeat;
-    background-size: auto;
-    height: 960px;
-
+    background-size: cover;
+    height: 100vh;
 }
 
 #home .py-5 {
@@ -223,25 +224,39 @@ body {
     right: auto;
 }
 
-@media (max-width: 767px) {
-    .timeline .timeline-wrapper {
-        padding-right: 150px;
+@media (max-width: 768px) {
+    .timeline:before {
+        left: 0%;
+    }
+
+    .timeline .timeline-wrapper .timeline-badge {
+        left: calc(0% - 7px);
     }
 
     .timeline .timeline-wrapper.timeline-inverted {
-        padding-left: 150px;
+        padding-left: 0px;
     }
 
     .timeline .timeline-wrapper .timeline-panel {
-        width: 60%;
+        width: 68%;
         margin-left: 0;
         margin-right: 0;
     }
-}
 
-@media (max-width: 576px) {
-    .timeline .timeline-wrapper .timeline-panel {
-        width: 68%;
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    #ifc {
+        margin-bottom: -50px;
+    }
+
+    .about {
+        margin-top: 150px;
+    }
+
+    .ir-bg-particles-1, .ir-bg-particles-2 {
+        filter: blur(10px);
     }
 }
 
@@ -493,6 +508,10 @@ body {
     color: var(--s-orange);
 }
 
+.ir-text-magenta {
+    color: var(--s-magenta);
+}
+
 .ir-pos-relative {
     position: relative;
 }
@@ -534,7 +553,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     line-height: 1.5;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .grid {
@@ -576,18 +595,4 @@ body {
 
 .right p {
     text-align: justify;
-}
-
-@media (max-width:768px) {
-    .grid {
-        grid-template-columns: 1fr;
-    }
-
-    #ifc {
-        margin-bottom: -50px;
-    }
-
-    .about {
-        margin-top: 150px;
-    }
 }
